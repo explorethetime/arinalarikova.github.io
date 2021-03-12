@@ -1,0 +1,175 @@
+
+body {
+  height: 100%;
+}
+
+body {
+  background: #F6BAF1;  
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 150px 50px 50px 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background-color: #78F8DD;
+  border: 10px solid #F5F56D;
+  max-width: 400px;
+  height: 270px;
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100000;
+}
+
+.vintage {
+  position: sticky;
+  background-color: black;
+  margin: 0 0 0 220px;
+  width: 50px;
+  height: 30px;
+  border-radius: 5%;
+
+  overflow: hidden;
+}
+
+.antenna {
+  position: absolute;
+  background: #F5F56D;
+  height: 10px;
+  bottom: 100%;
+  right: 20px;
+  width: 80%;
+  margin: 0;
+  transform: rotate(15deg);
+  border-radius: 50% 0 0 0;
+  transform-origin: 100% 100%;
+}
+
+.button-on {
+  position: absolute;
+  background-color: black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 10px 0 0 10px;
+}
+
+.button-off {
+  position: absolute;
+  background-color: red;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 1px 0 0 30px;
+}
+
+.middle-bar {
+  position: absolute;
+  background-color: #C571F8;
+  width: 190px;
+  height: 50px;
+  margin: 5px 0 0 60px;
+  border: 5px solid black;
+}
+
+.middle-box {
+  background-color: deeppink;
+  width: 120px;
+  height: 50px;
+  margin: 45px 0 0 135px;
+  border: 5px solid black;
+}
+
+.line {
+  background-color: black;
+  width: 190px;
+  height: 10px;
+  margin: 5px 0 0 0;
+}
+
+.top-tune {
+  height: 80px;
+  border-bottom: 10px solid #1a1a1a;
+}
+
+.speaker {
+  overflow: hidden;
+  padding: 15px;
+  margin: -100px 0 50px 0;
+}
+
+.speaker-main {
+  background-color: black;
+  float: right;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 15px solid #7D8784;
+}
+
+.speaker-inside {
+  background-color: black;
+  float: left;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 15px solid #7D8784;
+}
+
+.notes {
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 30%;
+  min-width: 60px;
+  height: 40px;
+  border: 0px solid #000;
+}
+
+.n-1,
+.n-2,
+.n-3 {
+  position: absolute;
+  animation: notes 2s infinite linear;
+  font-size: 35px;
+  opacity: 0;
+}
+
+.n-1 {
+  top: 80px;
+  left: 0;
+  animation-delay: 0.5s;
+}
+
+.n-2 {
+  top: 90px;
+  left: 30%;
+  animation-delay: 1.5s;
+}
+
+.n-3 {
+  top: 100px;
+  left: 60%;
+  animation-delay: 1s;
+}
+
+@keyframes notes {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translate(50%, -50%);
+  }
+  100% {
+    transform: scale(1.5) translate(100%, -100%);
+    opacity: 0;
+  }
+}
