@@ -516,8 +516,18 @@ main {
 
 
 @media(min-width: 0px) and (max-width: 1024px) {
+    .bg2 {
+        
+        width: 1%
+    }
+    .bg1 {
+       height: 50%;
+        width: 40%;
+    }
+       
+    }
 .container{
-    margin: 10% 8%;
+    margin: 10% 7%;
     width: 85%;
    text-align: center;
     padding: 4%;
